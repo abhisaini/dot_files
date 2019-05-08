@@ -28,3 +28,5 @@ fi
 PATH="/home/abhi/Qt5.7.0/Tools/QtCreator/bin/bin:$PATH"
 # export SHELL=/bin/zsh
 source .zprofile
+export PATH=$PATH:/usr/local/go/bin
+xrandr --output  HDMI1 --mode 1360x768

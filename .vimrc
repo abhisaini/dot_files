@@ -19,9 +19,10 @@ Plug 'posva/vim-vue'
 Plug 'severin-lemaignan/vim-minimap'
 Plug 'djoshea/vim-autoread'
 Plug 'slim-template/vim-slim'
-
-Plug 'shdick/onedark.vim'
-
+Plug 'Valloric/YouCompleteMe'
+" Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'shdick/onedark.vim'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 """""""""""""""""""""""""""
 
@@ -72,7 +73,7 @@ set nocindent
 " Speed optimization
 set ttyfast
 set lazyredraw
-
+" set list lcs=tab:\|\
 " Theme
  set background=dark
 " set termguicolors
@@ -93,7 +94,7 @@ let g:airline#extensions#branch#enabled=1
 
 " Indent Guides
 let g:indentLine_enabled=1
-let g:indentLine_color_term=235
+let g:indentLine_color_term=239
 let g:indentLine_char='┆'
 
 " Syntastic
@@ -105,6 +106,7 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Start Minimap
 " autocmd VimEnter * Minimap
